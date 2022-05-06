@@ -1,0 +1,45 @@
+WEBSITE BDE:
+	-> Home (static)
+		-> Background Image
+		-> Navigation Bar :
+			-> L'équipe
+			-> Nos Projets
+			-> La Boutique
+			-> Nous contacter
+	-> Panel Administration:
+		-> Gerer les membres du BDE
+		-> Gerer les projets
+		-> Gerer les articles du merch
+		-> Gerer les contact
+	-> Equipe BDE
+		-> Photo
+		-> Nom
+		-> Statut
+	-> Projet
+		-> (id)
+		-> Titre
+		-> Photo
+		-> Date (Peut etre Null => pas encore organisé)
+		-> Description courte
+		-> En savoir plus
+			-> page projet par id
+			-> Titre
+			-> Photo
+			-> Texte descriptif detaillé
+	-> Partenariat
+		-> Liste des Partenariat
+			-> Logo
+			-> Titre
+			-> Description du partenariat
+			-> URL du partenaire
+	-> Merch
+		-> Nom
+		-> Description
+		-> Prix
+	-> Contact
+		-> Formulaire de Contact
+		-> Adresse mail
+		-> Réseau sociaux
+		-> Adresse
+		-> Integration Maps
+	
