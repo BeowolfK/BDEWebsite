@@ -1,1 +1,8 @@
+### Server PHP Project ###
 php -S localhost:8000 -t public/
+
+### Create Controller ###
+php bin/console make:controller [ControllerName]
+
+### Debug Controller ###
+php bin/console debug:router [RouteName]

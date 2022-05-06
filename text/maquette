@@ -26,6 +26,12 @@ WEBSITE BDE:
 			-> Titre
 			-> Photo
 			-> Texte descriptif detaillé
+	-> Partenariat
+		-> Liste des Partenariat
+			-> Logo
+			-> Titre
+			-> Description du partenariat
+			-> URL du partenaire
 	-> Merch
 		-> Nom
 		-> Description
