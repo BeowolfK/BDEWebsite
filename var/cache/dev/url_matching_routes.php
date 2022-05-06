@@ -8,6 +8,12 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/admin_panel' => [[['_route' => 'app_admin_panel', '_controller' => 'App\\Controller\\AdminPanelController::index'], null, null, null, false, false, null]],
+        '/boutique' => [[['_route' => 'app_boutique', '_controller' => 'App\\Controller\\BoutiqueController::index'], null, null, null, false, false, null]],
+        '/contact' => [[['_route' => 'app_contact', '_controller' => 'App\\Controller\\ContactController::index'], null, null, null, false, false, null]],
+        '/equipe' => [[['_route' => 'app_equipe', '_controller' => 'App\\Controller\\EquipeController::index'], null, null, null, false, false, null]],
+        '/partenariat' => [[['_route' => 'app_partenariat', '_controller' => 'App\\Controller\\PartenariatController::index'], null, null, null, false, false, null]],
+        '/projet' => [[['_route' => 'app_projet', '_controller' => 'App\\Controller\\ProjetController::index'], null, null, null, false, false, null]],
         '/_profiler' => [[['_route' => '_profiler_home', '_controller' => 'web_profiler.controller.profiler::homeAction'], null, null, null, true, false, null]],
         '/_profiler/search' => [[['_route' => '_profiler_search', '_controller' => 'web_profiler.controller.profiler::searchAction'], null, null, null, false, false, null]],
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],

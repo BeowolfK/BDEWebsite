@@ -1,2 +1,9 @@
 a93c71,127.0.0.1,GET,http://localhost:8080/,1651566027,,404
 b67ae0,127.0.0.1,GET,http://localhost:8080/,1651571003,,404
+0f2352,127.0.0.1,GET,http://127.0.0.1:8000/,1651838542,,404
+36dd33,127.0.0.1,GET,http://localhost:8000/,1651838543,,404
+d00159,127.0.0.1,GET,http://localhost:8000/admin_panel,1651838607,,200
+9d1216,127.0.0.1,GET,http://localhost:8000/admin_panel,1651838864,,200
+0fa2ff,127.0.0.1,GET,http://localhost:8000/,1651839105,,404
+04b39a,127.0.0.1,GET,http://localhost:8000/admin_panel,1651839113,,200
+5cc811,127.0.0.1,GET,http://localhost:8000/admin_panel,1651839118,,200

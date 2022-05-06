@@ -16,7 +16,6 @@ WEBSITE BDE:
 		-> Nom
 		-> Statut
 	-> Projet
-		-> (id)
 		-> Titre
 		-> Photo
 		-> Date (Peut etre Null => pas encore organisé)
