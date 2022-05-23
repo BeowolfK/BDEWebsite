@@ -8,7 +8,7 @@
         <div> Ecrit le {{ projet.date | date('d/m/Y') }} à {{ projet.date | date('H:i') }}</div>
         <img src="{{ projet.photo }}">
         <p>{{ projet.description | raw}}</p>
-        <a href="{{ app.request.uri }}/{{ projet.id }}">{{ projet.id }}</a>
+        <a href="{{ app.request.uri }}/{{ projet.id }}">En savoir plus</a>
 
     </article>
 

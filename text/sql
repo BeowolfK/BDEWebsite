@@ -1,4 +1,4 @@
 Equipe {id, Photo, Nom, Statut}
 Projet {id, Titre, Photo, Date, Description, Texte}
 Partenariat {id, Titre, Logo, Description, URL}
-Boutique {id, nom_article, desc_article, prix_article, photo_article}
+Boutique {id, nomArticle, descArticle, prixArticle, photoArticle}

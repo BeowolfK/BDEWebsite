@@ -53,3 +53,13 @@ ac1365,127.0.0.1,GET,http://localhost:8000/equipe,1653296500,,200
 bdaa78,127.0.0.1,GET,http://localhost:8000/equipe,1653296553,,200
 5d1551,127.0.0.1,GET,http://localhost:8000/equipe,1653296740,,200
 e8bc65,127.0.0.1,GET,http://localhost:8000/equipe,1653296755,,200
+6469e4,127.0.0.1,GET,http://localhost:8000/boutique,1653297394,9049ec,500
+9049ec,127.0.0.1,GET,http://localhost:8000/boutique,1653297394,,500
+b0760a,127.0.0.1,GET,http://localhost:8000/boutique,1653297425,9b49e6,500
+9b49e6,127.0.0.1,GET,http://localhost:8000/boutique,1653297425,,500
+8c598c,127.0.0.1,GET,http://localhost:8000/boutique,1653297509,,200
+be68c2,127.0.0.1,GET,http://localhost:8000/partenariat,1653298549,,200
+239b43,127.0.0.1,GET,http://localhost:8000/partenariat,1653299425,e434a9,500
+e434a9,127.0.0.1,GET,http://localhost:8000/partenariat,1653299426,,500
+321084,127.0.0.1,GET,http://localhost:8000/partenariat,1653299443,,200
+851bc8,127.0.0.1,GET,http://localhost:8000/contact,1653299779,,200

@@ -11,27 +11,27 @@ WEBSITE BDE:
 		-> Gerer les projets
 		-> Gerer les articles du merch
 		-> Gerer les contact
-	-> Equipe BDE
+	-> Equipe BDE (ok)
 		-> Photo
 		-> Nom
 		-> Statut
-	-> Projet
+	-> Projet (ok)
 		-> Titre
 		-> Photo
 		-> Date (Peut etre Null => pas encore organisé)
 		-> Description courte
-		-> En savoir plus
+		-> En savoir plus (ok)
 			-> page projet par id
 			-> Titre
 			-> Photo
 			-> Texte descriptif detaillé
-	-> Partenariat
+	-> Partenariat (ok)
 		-> Liste des Partenariat
 			-> Logo
 			-> Titre
 			-> Description du partenariat
 			-> URL du partenaire
-	-> Merch
+	-> Merch (ok)
 		-> Nom
 		-> Description
 		-> Prix

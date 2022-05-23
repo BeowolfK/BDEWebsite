@@ -96,9 +96,7 @@ class __TwigTemplate_223b62585b41b72286e0790e84ff5497750139aba3de7dc0cbc46d107ff
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 11, $this->source); })()), "request", [], "any", false, false, false, 11), "uri", [], "any", false, false, false, 11), "html", null, true);
             echo "/";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 11), "html", null, true);
-            echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 11), "html", null, true);
-            echo "</a>
+            echo "\">En savoir plus</a>
 
     </article>
 
@@ -131,7 +129,7 @@ class __TwigTemplate_223b62585b41b72286e0790e84ff5497750139aba3de7dc0cbc46d107ff
 
     public function getDebugInfo()
     {
-        return array (  112 => 17,  96 => 11,  92 => 10,  88 => 9,  82 => 8,  78 => 7,  75 => 6,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  110 => 17,  96 => 11,  92 => 10,  88 => 9,  82 => 8,  78 => 7,  75 => 6,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -146,7 +144,7 @@ class __TwigTemplate_223b62585b41b72286e0790e84ff5497750139aba3de7dc0cbc46d107ff
         <div> Ecrit le {{ projet.date | date('d/m/Y') }} à {{ projet.date | date('H:i') }}</div>
         <img src=\"{{ projet.photo }}\">
         <p>{{ projet.description | raw}}</p>
-        <a href=\"{{ app.request.uri }}/{{ projet.id }}\">{{ projet.id }}</a>
+        <a href=\"{{ app.request.uri }}/{{ projet.id }}\">En savoir plus</a>
 
     </article>
 
