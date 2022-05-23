@@ -9,6 +9,7 @@ return [
     'app_equipe' => [[], ['_controller' => 'App\\Controller\\EquipeController::index'], [], [['text', '/equipe']], [], [], []],
     'app_partenariat' => [[], ['_controller' => 'App\\Controller\\PartenariatController::index'], [], [['text', '/partenariat']], [], [], []],
     'app_projet' => [[], ['_controller' => 'App\\Controller\\ProjetController::index'], [], [['text', '/projet']], [], [], []],
+    'projet_show' => [['id'], ['_controller' => 'App\\Controller\\ProjetController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/projet']], [], [], []],
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], [], []],
     '_wdt' => [['token'], ['_controller' => 'web_profiler.controller.profiler::toolbarAction'], [], [['variable', '/', '[^/]++', 'token', true], ['text', '/_wdt']], [], [], []],
     '_profiler_home' => [[], ['_controller' => 'web_profiler.controller.profiler::homeAction'], [], [['text', '/_profiler/']], [], [], []],

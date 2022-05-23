@@ -72,7 +72,7 @@ class __TwigTemplate_223b62585b41b72286e0790e84ff5497750139aba3de7dc0cbc46d107ff
         $context['_seq'] = twig_ensure_traversable((isset($context["projets"]) || array_key_exists("projets", $context) ? $context["projets"] : (function () { throw new RuntimeError('Variable "projets" does not exist.', 5, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["projet"]) {
             // line 6
-            echo "    <projet>
+            echo "    <article>
         <h2>";
             // line 7
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["projet"], "titre", [], "any", false, false, false, 7), "html", null, true);
@@ -91,12 +91,16 @@ class __TwigTemplate_223b62585b41b72286e0790e84ff5497750139aba3de7dc0cbc46d107ff
             // line 10
             echo twig_get_attribute($this->env, $this->source, $context["projet"], "description", [], "any", false, false, false, 10);
             echo "</p>
-        <a href=\"#\">";
+        <a href=\"";
             // line 11
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 11, $this->source); })()), "request", [], "any", false, false, false, 11), "uri", [], "any", false, false, false, 11), "html", null, true);
+            echo "/";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 11), "html", null, true);
+            echo "\">";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["projet"], "id", [], "any", false, false, false, 11), "html", null, true);
             echo "</a>
 
-    </projet>
+    </article>
 
 
 ";
@@ -127,7 +131,7 @@ class __TwigTemplate_223b62585b41b72286e0790e84ff5497750139aba3de7dc0cbc46d107ff
 
     public function getDebugInfo()
     {
-        return array (  108 => 17,  96 => 11,  92 => 10,  88 => 9,  82 => 8,  78 => 7,  75 => 6,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  112 => 17,  96 => 11,  92 => 10,  88 => 9,  82 => 8,  78 => 7,  75 => 6,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -137,14 +141,14 @@ class __TwigTemplate_223b62585b41b72286e0790e84ff5497750139aba3de7dc0cbc46d107ff
 {% block body %}
 
 {% for projet in projets %}
-    <projet>
+    <article>
         <h2>{{ projet.titre }}</h2>
         <div> Ecrit le {{ projet.date | date('d/m/Y') }} à {{ projet.date | date('H:i') }}</div>
         <img src=\"{{ projet.photo }}\">
         <p>{{ projet.description | raw}}</p>
-        <a href=\"#\">{{ projet.id }}</a>
+        <a href=\"{{ app.request.uri }}/{{ projet.id }}\">{{ projet.id }}</a>
 
-    </projet>
+    </article>
 
 
 {% endfor %}

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<article>
+    <h2>{{ projet.titre }}</h2>
+    <div> Ecrit le {{ projet.date | date('d/m/Y') }} à {{ projet.date | date('H:i') }}</div>
+    <img src="{{ projet.photo }}">
+    <p>{{ projet.description | raw}}</p>
+
+</article>
+
+{% endblock %}

@@ -18,8 +18,20 @@ class ProjetController extends AbstractController
         $projets = $repo->findAll();
 
         return $this->render('projet/index.html.twig', [
-            'controller_name' => 'ProjetController',
-            'projets' => $projets
+            'projets' => $projets,
         ]);
+    }
+
+    /**
+     * @Route("/projet/{id}", name="projet_show")
+     */
+    public function show($id){
+        $repo = $this->getDoctrine()->getRepository(Projet::class);
+        $projet = $repo->find($id);
+
+        return $this->render('projet/projet.html.twig', [
+            'projet' => $projet
+        ]);
+
     }
 }

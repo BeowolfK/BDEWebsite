@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Equipe;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -13,8 +14,12 @@ class EquipeController extends AbstractController
      */
     public function index(): Response
     {
+        $repo = $this->getDoctrine()->getRepository(Equipe::class);
+        $equipe = $repo->findAll();
+
         return $this->render('equipe/index.html.twig', [
-            'controller_name' => 'EquipeController',
+            'equipe' => $equipe,
         ]);
     }
+
 }
