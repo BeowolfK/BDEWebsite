@@ -7,6 +7,7 @@ return [
     'app_boutique' => [[], ['_controller' => 'App\\Controller\\BoutiqueController::index'], [], [['text', '/boutique']], [], [], []],
     'app_contact' => [[], ['_controller' => 'App\\Controller\\ContactController::index'], [], [['text', '/contact']], [], [], []],
     'app_equipe' => [[], ['_controller' => 'App\\Controller\\EquipeController::index'], [], [['text', '/equipe']], [], [], []],
+    'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], [], []],
     'app_partenariat' => [[], ['_controller' => 'App\\Controller\\PartenariatController::index'], [], [['text', '/partenariat']], [], [], []],
     'app_projet' => [[], ['_controller' => 'App\\Controller\\ProjetController::index'], [], [['text', '/projet']], [], [], []],
     'projet_show' => [['id'], ['_controller' => 'App\\Controller\\ProjetController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/projet']], [], [], []],

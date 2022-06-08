@@ -63,3 +63,6 @@ be68c2,127.0.0.1,GET,http://localhost:8000/partenariat,1653298549,,200
 e434a9,127.0.0.1,GET,http://localhost:8000/partenariat,1653299426,,500
 321084,127.0.0.1,GET,http://localhost:8000/partenariat,1653299443,,200
 851bc8,127.0.0.1,GET,http://localhost:8000/contact,1653299779,,200
+779ab5,127.0.0.1,GET,http://127.0.0.1:8000/,1654688227,,404
+a86c1f,127.0.0.1,GET,http://localhost:8000/,1654688232,,404
+74e58a,127.0.0.1,GET,http://localhost:8000/,1654688574,,200
