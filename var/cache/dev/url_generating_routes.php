@@ -4,6 +4,9 @@
 
 return [
     'app_admin_panel' => [[], ['_controller' => 'App\\Controller\\AdminPanelController::index'], [], [['text', '/admin_panel']], [], [], []],
+    'delete_route_projet' => [['id'], ['_controller' => 'App\\Controller\\AdminPanelController::delete_projet'], ['id' => '\\d+'], [['variable', '/', '\\d+', 'id', true], ['text', '/delete_projet']], [], [], []],
+    'delete_route_article' => [['id'], ['_controller' => 'App\\Controller\\AdminPanelController::delete_article'], ['id' => '\\d+'], [['variable', '/', '\\d+', 'id', true], ['text', '/delete_article']], [], [], []],
+    'delete_route_partenaire' => [['id'], ['_controller' => 'App\\Controller\\AdminPanelController::delete_partenaire'], ['id' => '\\d+'], [['variable', '/', '\\d+', 'id', true], ['text', '/delete_partenaire']], [], [], []],
     'app_boutique' => [[], ['_controller' => 'App\\Controller\\BoutiqueController::index'], [], [['text', '/boutique']], [], [], []],
     'app_contact' => [[], ['_controller' => 'App\\Controller\\ContactController::index'], [], [['text', '/contact']], [], [], []],
     'app_equipe' => [[], ['_controller' => 'App\\Controller\\EquipeController::index'], [], [['text', '/equipe']], [], [], []],

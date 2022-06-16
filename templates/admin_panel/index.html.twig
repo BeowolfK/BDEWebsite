@@ -6,35 +6,111 @@
 <div class="example-wrapper">
     <h1>Hello {{ user }}! ✅</h1>
     <hr>
-    <h2>Creer un nouveau projet</h2>
-    {{ form_start(formProjet) }}
-    <div class="form">
-        <div class="form-group">
-            {{ form_row(formProjet.Titre, { 'attr': {'placeholder': 'Titre du projet'}})}}
+    <div id="projet">
+        <h2>Creer un nouveau projet</h2>
+        {{ form_start(formProjet) }}
+        <div class="form">
+            <div class="form-group">
+                {{ form_row(formProjet.Titre, { 'attr': {'placeholder': 'Titre du projet'}})}}
+            </div>
+
+            <div class="form-group">
+                {{ form_row(formProjet.Photo, { 'attr': {'placeholder': 'Photo de couverture du projet'}})}}
+            </div>
+
+            <div class="form-group">
+                {{ form_row(formProjet.Date, { 'attr': {'class': 'form-group'} }) }}
+            </div>
+
+
+
+            <div class="form-group">
+                {{ form_row(formProjet.Description, { 'attr': {'placeholder':' Description du projet'}})}}
+            </div>
+
+            <div class="form-group">
+                {{ form_row(formProjet.Texte, { 'attr': {'placeholder': 'Texte du projet'}})}}
+            </div>
+                
+            {{ form_row(formProjet.Submit, { 'label': 'Enregistrer'})}}
+
+            {{ form_end(formProjet) }}
         </div>
 
-        <div class="form-group">
-            {{ form_row(formProjet.Photo, { 'attr': {'placeholder': 'Photo de couverture du projet'}})}}
-        </div>
-
-        <div class="form-group">
-            {{ form_row(formProjet.Date, { 'attr': {'class': 'form-group'} }) }}
-        </div>
-
-
-
-        <div class="form-group">
-            {{ form_row(formProjet.Description, { 'attr': {'placeholder':' Description du projet'}})}}
-        </div>
-
-        <div class="form-group">
-            {{ form_row(formProjet.Texte, { 'attr': {'placeholder': 'Texte du projet'}})}}
-        </div>
-            
-        {{ form_row(formProjet.Submit, { 'label': 'Enregistrer'})}}
-
-        {{ form_end(formProjet) }}
+        {% for projet in projets %}
+        <article>
+            <p>{{ projet.id }} : {{ projet.titre }} - Ecrit le {{ projet.date | date('d/m/Y') }} à {{ projet.date | date('H:i') }}</p>
+            <a href="{{ path('projet_show', {'id': projet.id }) }}">Visualiser</a>
+            <a href="{{ path('delete_route_projet', {'id': projet.id }) }}">Supprimer</a>
+        </article>
+        {% endfor %}
     </div>
-    
+    <hr>
+    <div id="boutique">
+        <h2>Creer un nouvel article</h2>
+        {{ form_start(formBoutique) }}
+        <div class="form">
+            <div class="form-group">
+                {{ form_row(formBoutique.nomArticle, { 'attr': {'placeholder': 'Nom de l\'article'}})}}
+            </div>
+
+            <div class="form-group">
+                {{ form_row(formBoutique.photoArticle, { 'attr': {'placeholder': 'Photo d\'illustration de l\'article'}})}}
+            </div>
+
+            <div class="form-group">
+                {{ form_row(formBoutique.descArticle, { 'attr': {'placeholder':' Description de l\'article'}})}}
+            </div>
+
+            <div class="form-group">
+                {{ form_row(formBoutique.prixArticle, { 'attr': {'placeholder': 'Prix'}})}}
+            </div>
+                
+            {{ form_row(formBoutique.Submit, { 'label': 'Enregistrer'})}}
+
+            {{ form_end(formBoutique) }}
+        </div>
+
+        {% for article in boutique %}
+        <article>
+            <p>{{ article.id }} : {{ article.nomArticle }}</p>
+            <a href="{{ path('delete_route_article', {'id': article.id }) }}">Supprimer</a>
+        </article>
+        {% endfor %}
+    </div>
+    <hr>
+    <div id="partenariat">
+        <h2>Creer un nouvel article</h2>
+        {{ form_start(formPartenariat) }}
+        <div class="form">
+            <div class="form-group">
+                {{ form_row(formPartenariat.Titre, { 'attr': {'placeholder': 'Nom du partenaire'}})}}
+            </div>
+
+            <div class="form-group">
+                {{ form_row(formPartenariat.Logo, { 'attr': {'placeholder': 'logo d\'illustration du partenaire'}})}}
+            </div>
+
+            <div class="form-group">
+                {{ form_row(formPartenariat.Description, { 'attr': {'placeholder':' Description du partenariat'}})}}
+            </div>
+
+            <div class="form-group">
+                {{ form_row(formPartenariat.URL, { 'attr': {'placeholder': 'URL du partenaire'}})}}
+            </div>
+                
+            {{ form_row(formPartenariat.Submit, { 'label': 'Enregistrer'})}}
+
+            {{ form_end(formPartenariat) }}
+        </div>
+
+        {% for partenaire in partenariat %}
+        <article>
+            <p>{{ partenaire.id }} : {{ partenaire.Titre }}</p>
+            <a href="{{ path('delete_route_partenaire', {'id': partenaire.id }) }}">Supprimer</a>
+        </article>
+        {% endfor %}
+    </div>
+
 </div>
 {% endblock %}

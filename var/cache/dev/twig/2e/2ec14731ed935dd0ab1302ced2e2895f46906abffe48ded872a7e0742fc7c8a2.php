@@ -84,7 +84,7 @@ class __TwigTemplate_1d2028128bb6a7a337ff9a2a5e17d8bb3f447d1384851f0a76e73e7de66
         <p>";
             // line 9
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "prixArticle", [], "any", false, false, false, 9), "html", null, true);
-            echo "
+            echo "€</p>
         <p>";
             // line 10
             echo twig_get_attribute($this->env, $this->source, $context["article"], "descArticle", [], "any", false, false, false, 10);
@@ -134,7 +134,7 @@ class __TwigTemplate_1d2028128bb6a7a337ff9a2a5e17d8bb3f447d1384851f0a76e73e7de66
     <article>
         <h2>{{ article.nomArticle }}</h2>
         <img src=\"{{ article.photoArticle }}\">
-        <p>{{ article.prixArticle }}
+        <p>{{ article.prixArticle }}€</p>
         <p>{{ article.descArticle | raw}}</p>
 
     </article>
