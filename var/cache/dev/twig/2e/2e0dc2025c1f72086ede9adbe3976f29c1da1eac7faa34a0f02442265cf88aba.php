@@ -257,7 +257,7 @@ class __TwigTemplate_9a95f40e6ec1eecb9ce86aafdc48a311286b92777ad731ec61cdf6a3d7f
         echo "    </div>
     <hr>
     <div id=\"partenariat\">
-        <h2>Creer un nouvel article</h2>
+        <h2>Creer un nouvel partenariat</h2>
         ";
         // line 84
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formPartenariat"]) || array_key_exists("formPartenariat", $context) ? $context["formPartenariat"] : (function () { throw new RuntimeError('Variable "formPartenariat" does not exist.', 84, $this->source); })()), 'form_start');
@@ -437,7 +437,7 @@ class __TwigTemplate_9a95f40e6ec1eecb9ce86aafdc48a311286b92777ad731ec61cdf6a3d7f
     </div>
     <hr>
     <div id=\"partenariat\">
-        <h2>Creer un nouvel article</h2>
+        <h2>Creer un nouvel partenariat</h2>
         {{ form_start(formPartenariat) }}
         <div class=\"form\">
             <div class=\"form-group\">

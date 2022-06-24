@@ -27,7 +27,6 @@ class AdminPanelController extends AbstractController
 
 
         $projet = new Projet();
-        
         $form_projets = $this->createFormBuilder($projet)
                      ->add('Titre', TextType::class)
                      ->add('Photo', TextType::class)
@@ -46,7 +45,6 @@ class AdminPanelController extends AbstractController
         }
 
         $articles = new Boutique();
-        
         $form_boutique = $this->createFormBuilder($articles)
                      ->add('nomArticle', TextType::class)
                      ->add('photoArticle', TextType::class)
@@ -63,7 +61,6 @@ class AdminPanelController extends AbstractController
         }
 
         $partenaire = new Partenariat();
-        
         $form_partenaire = $this->createFormBuilder($partenaire)
                      ->add('Titre', TextType::class)
                      ->add('Logo', TextType::class)
